@@ -9,7 +9,9 @@ export class AppService {
   }
 
   createEvent(data): any {
-    arr.push(data)
+    const result = data;
+    result.name = result.name + arr.length;
+    arr.push(result)
     return arr;
   }
 
