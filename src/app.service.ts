@@ -11,8 +11,7 @@ export class AppService {
   createEvent(data): any {
     const result = data;
     result.name = result.name + arr.length;
-    arr.push(result)
+    arr.push(result);
     return arr;
   }
-
 }
